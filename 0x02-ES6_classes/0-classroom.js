@@ -1,11 +1,13 @@
-export default class Car {
-  constructor(brand, motor, color) {
-    this._brand = brand;
-    this._motor = motor;
-    this._color = color;
-  }
-
-  cloneCar() {
-    return new this.constructor(this._brand, this._motor, this._color);
+/**
+ * Represents a class room.
+ */
+export default class ClassRoom {
+  /**
+   * Creates a new @see {@link ClassRoom}.
+   * @param {Number} maxStudentsSize - The maximum number of
+   * students in the class.
+   */
+  constructor(maxStudentsSize) {
+    this._maxStudentsSize = maxStudentsSize;
   }
 }
